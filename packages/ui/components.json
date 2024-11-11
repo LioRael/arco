@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "tailwind": {
+    "config": "../config/tailwind/src/preset.ts",
+    "css": "../../apps/web/app/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true
+  },
+  "rsc": true,
+  "tsx": true,
+  "aliases": {
+    "utils": "@nouz/ui/cn",
+    "components": "@nouz/ui",
+    "ui": "src/primitives",
+    "hooks": "@nouz/ui/hooks",
+    "lib": "@nouz/ui/lib"
+  }
+}

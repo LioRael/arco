@@ -1,0 +1,24 @@
+{
+  "name": "@nouz/env",
+  "version": "0.0.0",
+  "author": "LioRael",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./web/server": "./src/web/server.ts",
+    "./web/client": "./src/web/client.ts",
+    "./web/db": "./src/web/db.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "@t3-oss/env-core": "^0.11.1",
+    "@t3-oss/env-nextjs": "^0.11.1",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@nouz/eslint": "workspace:*",
+    "@nouz/tsconfig": "workspace:*"
+  }
+}

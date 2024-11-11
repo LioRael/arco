@@ -1,0 +1,17 @@
+{
+  "name": "@nouz/utils",
+  "version": "0.0.0",
+  "author": "LioRael",
+  "type": "module",
+  "exports": {
+    "./url": "./src/url.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "@nouz/eslint": "workspace:*",
+    "@nouz/tsconfig": "workspace:*",
+    "tailwindcss": "catalog:"
+  }
+}

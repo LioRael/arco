@@ -1,0 +1,20 @@
+{
+  "extends": "@nouz/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "declaration": false,
+    "declarationMap": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@nouz/*": ["../../packages/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mjs",
+    "next.config.ts"
+  ]
+}

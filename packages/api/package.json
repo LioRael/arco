@@ -1,0 +1,25 @@
+{
+  "name": "@nouz/api",
+  "version": "0.0.0",
+  "private": true,
+  "author": "LioRael",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "@nouz/auth": "workspace:*",
+    "@nouz/db": "workspace:*",
+    "@trpc/server": "11.0.0-rc.593",
+    "superjson": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@nouz/eslint": "workspace:*",
+    "@nouz/tsconfig": "workspace:*",
+    "@total-typescript/ts-reset": "catalog:"
+  }
+}

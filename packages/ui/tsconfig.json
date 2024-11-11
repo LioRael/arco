@@ -1,0 +1,20 @@
+{
+  "extends": "@nouz/tsconfig/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@nouz/ui/*": ["./src/primitives/*"],
+      "@nouz/ui/hooks/*": ["./src/hooks/*"],
+      "@nouz/ui/lib/*": ["./src/lib/*"],
+      "@nouz/ui/cn": ["./src/utils/cn.ts"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
