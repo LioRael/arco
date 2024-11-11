@@ -7,7 +7,6 @@
   "scripts": {
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
-    "lint": "eslint . --max-warnings 0",
     "prepare": "husky",
     "workspaces": "tsx ./scripts/workspaces.ts"
   },
