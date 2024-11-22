@@ -1,7 +1,7 @@
 'use client'
 
 import type React from 'react'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 import { cn } from '@nouz/ui/cn'
 
