@@ -12,41 +12,43 @@ export type ORPCContext = {
 
 export const pub = os
   .context<ORPCContext | undefined>()
-  .use(async (_input, context, _meta) => {
+  .use(async (_input, context, meta) => {
     const session = await auth.api.getSession({
       headers: await headers(),
     })
 
-    return {
+    return meta.next({
       context: {
         ...context,
         db,
         session: session?.session,
         user: session?.user,
       },
-    }
+    })
   })
 
-export const authed = pub.use((_input, context, _meta) => {
+export const authed = pub.use((_input, context, meta) => {
   if (!context.session || !context.user) {
     throw new ORPCError({
       code: 'UNAUTHORIZED',
     })
   }
 
-  return {
+  return meta.next({
     context: {
       ...context,
       session: context.session,
       user: context.user,
     },
-  }
+  })
 })
 
-export const admin = authed.use((_input, context, _meta) => {
+export const admin = authed.use((_input, context, meta) => {
   if (context.user.role !== 'admin') {
     throw new ORPCError({
       code: 'FORBIDDEN',
     })
   }
+
+  return meta.next({})
 })
