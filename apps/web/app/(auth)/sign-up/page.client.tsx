@@ -1,6 +1,7 @@
 'use client'
 
 import type React from 'react'
+import { useRouter } from 'next/navigation'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm, useFormContext } from 'react-hook-form'
 import { z } from 'zod'
@@ -38,6 +39,7 @@ const SignUpForm = ({
   children: React.ReactNode
   className?: string
 }) => {
+  const router = useRouter()
   const form = useForm<z.infer<typeof schema>>({
     resolver: zodResolver(schema),
     defaultValues: {
@@ -65,6 +67,7 @@ const SignUpForm = ({
         onSuccess() {
           toast.success('Account created successfully')
           form.reset()
+          router.push('/dashboard')
         },
       },
     })
