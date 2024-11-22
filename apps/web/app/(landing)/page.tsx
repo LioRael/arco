@@ -7,11 +7,11 @@ import { Button } from '@nouz/ui/button'
 import { RainbowButton } from '@nouz/ui/rainbow-button'
 import { Skeleton } from '@nouz/ui/skeleton'
 
-import { api } from '@/lib/trpc/server'
+import { api } from '@/lib/orpc/server'
 
 export default async function HomePage() {
   // Fetch sponsors data from API in React Server Component (RSC)
-  const sponsors = await api.sponsors.getSponsors()
+  const sponsors = await api.sponsors.list(undefined)
   return (
     <main className="container">
       <Introduction>

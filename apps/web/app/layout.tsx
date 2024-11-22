@@ -6,7 +6,7 @@ import './globals.css'
 
 import { Toaster } from '@nouz/ui/sonner'
 
-import { TRPCReactProvider } from '@/lib/trpc/react'
+import { ORPCProvider } from '@/lib/orpc/react'
 
 export const metadata: Metadata = {
   title: 'Create Nouz App',
@@ -35,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistMono.variable} ${geistSans.variable} antialiased`}
       >
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+        <ORPCProvider>{children}</ORPCProvider>
         <Toaster />
       </body>
     </html>

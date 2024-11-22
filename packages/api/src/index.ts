@@ -1,15 +1,4 @@
-import { sponsorsRouter } from './router/sponsors'
-import { createCallerFactory, createRouter } from './trpc'
-
-export const appRouter = createRouter({
-  sponsors: sponsorsRouter,
-})
-
-export type AppRouter = typeof appRouter
-
-export const createCaller = createCallerFactory(appRouter)
-
-export { createTRPCContext } from './trpc'
-export { fetchRequestHandler } from '@trpc/server/adapters/fetch'
-
-export type { inferRouterInputs, inferRouterOutputs } from '@trpc/server'
+export { router } from './router'
+export { createRouterCaller } from '@orpc/server'
+export { createFetchHandler } from '@orpc/server/fetch'
+export { createORPCContext } from './orpc'
