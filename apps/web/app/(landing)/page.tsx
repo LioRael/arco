@@ -2,16 +2,15 @@ import type React from 'react'
 import { headers } from 'next/headers'
 import Link from 'next/link'
 
+import { listSponsors } from '@nouz/api/router/sponsors'
 import { auth } from '@nouz/auth'
 import { Button } from '@nouz/ui/button'
 import { RainbowButton } from '@nouz/ui/rainbow-button'
 import { Skeleton } from '@nouz/ui/skeleton'
 
-import { orpc } from '@/lib/orpc/server'
-
 export default async function HomePage() {
-  // Fetch sponsors data from API in React Server Component (RSC)
-  const sponsors = await orpc.sponsors.list(undefined)
+  const sponsors = await listSponsors(undefined)
+
   return (
     <main className="container">
       <Introduction>

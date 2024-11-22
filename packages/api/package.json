@@ -5,7 +5,8 @@
   "author": "LioRael",
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./router/*": "./src/router/*.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0"
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@nouz/eslint": "workspace:*",
     "@nouz/tsconfig": "workspace:*",
-    "@total-typescript/ts-reset": "catalog:"
+    "@total-typescript/ts-reset": "catalog:",
+    "next": "catalog:"
   }
 }

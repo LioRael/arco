@@ -1,4 +1,4 @@
-import { createFetchHandler, createORPCContext, router } from '@nouz/api'
+import { createFetchHandler, router } from '@nouz/api'
 
 const handler = createFetchHandler({
   router,
@@ -6,12 +6,9 @@ const handler = createFetchHandler({
 })
 
 async function handleRequest(request: Request) {
-  const context = await createORPCContext(request.headers)
-
   return handler({
     request,
     prefix: '/api',
-    context,
   })
 }
 

@@ -1,3 +1,4 @@
+import { headers } from 'next/headers'
 import { ORPCError, os } from '@orpc/server'
 
 import { auth, Session } from '@nouz/auth'
@@ -9,25 +10,22 @@ export type ORPCContext = {
   db: typeof db
 }
 
-export const createORPCContext = async (headers: Headers) => {
-  const session = await auth.api.getSession({
-    headers,
+export const pub = os
+  .context<ORPCContext | undefined>()
+  .use(async (_input, context, _meta) => {
+    const session = await auth.api.getSession({
+      headers: await headers(),
+    })
+
+    return {
+      context: {
+        ...context,
+        db,
+        session: session?.session,
+        user: session?.user,
+      },
+    }
   })
-
-  return {
-    session: session?.session,
-    user: session?.user,
-    db,
-  }
-}
-
-export const pub = os.context<ORPCContext>().use((_input, _context, meta) => {
-  const start = Date.now()
-
-  meta.onFinish(() => {
-    console.log(`[${meta.path.join('/')}] ${Date.now() - start}ms`)
-  })
-})
 
 export const authed = pub.use((_input, context, _meta) => {
   if (!context.session || !context.user) {
