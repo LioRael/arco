@@ -12,14 +12,13 @@ export type ORPCContext = {
 
 export const pub = os
   .context<ORPCContext | undefined>()
-  .use(async (_input, context, meta) => {
+  .use(async (_input, _context, meta) => {
     const session = await auth.api.getSession({
       headers: await headers(),
     })
 
     return meta.next({
       context: {
-        ...context,
         db,
         session: session?.session,
         user: session?.user,
@@ -36,7 +35,6 @@ export const authed = pub.use((_input, context, meta) => {
 
   return meta.next({
     context: {
-      ...context,
       session: context.session,
       user: context.user,
     },
