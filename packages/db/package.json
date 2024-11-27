@@ -29,14 +29,14 @@
   "dependencies": {
     "@nouz/env": "workspace:*",
     "dotenv": "^16.4.5",
-    "drizzle-orm": "^0.36.1"
+    "drizzle-orm": "^0.36.4"
   },
   "devDependencies": {
     "@nouz/eslint": "workspace:*",
     "@nouz/tsconfig": "workspace:*",
     "@types/pg": "^8.11.10",
-    "dotenv-cli": "catalog:",
-    "drizzle-kit": "^0.28.0",
+    "dotenv-cli": "^7.4.4",
+    "drizzle-kit": "^0.28.1",
     "pg": "catalog:"
   }
 }

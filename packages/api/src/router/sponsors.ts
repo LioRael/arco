@@ -51,6 +51,6 @@ const listSponsors = pub
     summary: 'Get a list of sponsors',
   })
   .output(sponsorsSchema)
-  .handler(() => sponsors)
+  .func(() => sponsors)
 
 export { listSponsors }

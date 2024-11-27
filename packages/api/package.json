@@ -14,7 +14,7 @@
   "dependencies": {
     "@nouz/auth": "workspace:*",
     "@nouz/db": "workspace:*",
-    "@orpc/server": "^0.1.2",
+    "@orpc/server": "^0.3.0",
     "zod": "catalog:"
   },
   "devDependencies": {
