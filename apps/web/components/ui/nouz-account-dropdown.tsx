@@ -42,7 +42,10 @@ const NouzAccountDropdown = ({
         <DropdownMenuLabel className="p-0 font-normal">
           <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
             <Avatar className="size-8 rounded-lg">
-              <AvatarImage src={session.user.image} alt={session.user.name} />
+              <AvatarImage
+                src={session.user.image ?? undefined}
+                alt={session.user.name}
+              />
               <AvatarFallback className="rounded-lg">
                 <UserIcon />
               </AvatarFallback>
@@ -97,7 +100,10 @@ const NouzAccountDropdownSidebarTrigger = ({
       {...props}
     >
       <Avatar className="size-8 rounded-lg">
-        <AvatarImage src={session.user.image} alt={session.user.name} />
+        <AvatarImage
+          src={session.user.image ?? undefined}
+          alt={session.user.name ?? ''}
+        />
         <AvatarFallback className="rounded-lg">
           <UserIcon />
         </AvatarFallback>

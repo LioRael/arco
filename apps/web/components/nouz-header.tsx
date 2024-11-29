@@ -175,7 +175,7 @@ const NouzAccount = ({ session }: { session: Session }) => {
   return (
     <NouzUserAvatar
       className="size-9 cursor-pointer"
-      src={session.user.image}
+      src={session.user.image ?? undefined}
     />
   )
 }
