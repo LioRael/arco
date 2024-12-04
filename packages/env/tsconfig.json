@@ -1,4 +1,3 @@
 {
-  "extends": "@nouz/typescript-config/base.json",
-  "exclude": ["node_modules"]
+  "extends": "@nouz/typescript-config/base.json"
 }

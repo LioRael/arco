@@ -1,9 +1,15 @@
 import type { Config } from 'tailwindcss'
 
-import { config as preset } from '@nouz/tailwind-config/config'
+import { config as preset } from '@nouz/tailwind-config/src/config'
 
 const config = {
-  content: preset.content,
+  content: [
+    './node_modules/@nouz/design-system/src/components/ui/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './lib/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './providers/**/*.{ts,tsx}',
+  ],
   presets: [preset],
   theme: {
     extend: {

@@ -20,7 +20,22 @@
     "checkJs": true,
     "outDir": "dist",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+
+      "@nouz/auth": ["../auth/src"],
+      "@nouz/auth/*": ["../auth/src/*"],
+
+      "@nouz/db": ["../db/src"],
+      "@nouz/db/*": ["../db/src/*"],
+
+      "@nouz/env/*": ["../env/src/*"],
+
+      "@nouz/api": ["../api/src"],
+      "@nouz/api/*": ["../api/src/*"],
+
+      "@nouz/utils/*": ["../utils/src/*"],
+
+      "@nouz/design-system/*": ["../design-system/src/*"]
     }
   }
 }

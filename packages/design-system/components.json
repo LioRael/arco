@@ -5,7 +5,7 @@
   "tsx": true,
   "iconLibrary": "lucide",
   "tailwind": {
-    "config": "../config/tailwind/src/preset.ts",
+    "config": "../config/tailwind/src/config.ts",
     "css": "../../apps/web/app/globals.css",
     "baseColor": "neutral",
     "cssVariables": true

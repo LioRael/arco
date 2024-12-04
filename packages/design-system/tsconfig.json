@@ -9,7 +9,8 @@
     ],
     "paths": {
       "@nouz/*": ["../*"],
-      "@nouz/design-system/*": ["./*"]
+      "@nouz/design-system/*": ["./src/*"],
+      "@nouz/tailwind-config/*": ["../../packages/tailwind-config/src/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],

@@ -1,3 +1,8 @@
 {
-  "extends": "@nouz/typescript-config/base.json"
+  "extends": "@nouz/typescript-config/base.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

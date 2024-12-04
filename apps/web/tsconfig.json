@@ -6,8 +6,25 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@nouz/*": ["../../packages/*"],
-      "@config/*": ["../../packages/config/*"]
+
+      "@nouz/auth": ["../../packages/auth/src"],
+      "@nouz/auth/*": ["../../packages/auth/src/*"],
+
+      "@nouz/db": ["../../packages/db/src"],
+      "@nouz/db/*": ["../../packages/db/src/*"],
+
+      "@nouz/env/*": ["../../packages/env/src/*"],
+
+      "@nouz/api": ["../../packages/api/src"],
+      "@nouz/api/*": ["../../packages/api/src/*"],
+
+      "@nouz/utils/*": ["../../packages/utils/src/*"],
+
+      "@nouz/design-system/*": ["../../packages/design-system/src/*"],
+
+      "@nouz/tailwind-config/*": ["../../packages/tailwind-config/src/*"],
+
+      "@nouz/*": ["../../packages/*"]
     }
   },
   "include": [
