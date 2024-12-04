@@ -6,10 +6,10 @@ import type { Config } from 'tailwindcss'
 import animate from 'tailwindcss-animate'
 import defaultTheme from 'tailwindcss/defaultTheme'
 
-const config: Config = {
+export const config: Config = {
   darkMode: ['class'],
   content: [
-    './node_modules/@nouz/design-system/components/ui/src/**/*.{ts,tsx}',
+    './node_modules/@nouz/design-system/components/ui/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './lib/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
@@ -161,5 +161,3 @@ const config: Config = {
     },
   ],
 }
-
-export default config

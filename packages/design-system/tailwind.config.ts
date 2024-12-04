@@ -1,1 +1,1 @@
-export { default } from '@nouz/tailwind'
+export { config as default } from '@nouz/tailwind-config/config'

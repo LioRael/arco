@@ -1,4 +1,4 @@
-import library from '@nouz/eslint/library.js'
+import library from '@nouz/eslint-config/library.js'
 
 export default [
   ...library,

@@ -39,9 +39,9 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@nouz/eslint": "workspace:*",
-    "@nouz/tailwind": "workspace:*",
-    "@nouz/tsconfig": "workspace:*",
+    "@nouz/eslint-config": "workspace:*",
+    "@nouz/tailwind-config": "workspace:*",
+    "@nouz/typescript-config": "workspace:*",
     "@total-typescript/ts-reset": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",

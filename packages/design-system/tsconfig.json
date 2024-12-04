@@ -1,5 +1,5 @@
 {
-  "extends": "@nouz/tsconfig/react-library.json",
+  "extends": "@nouz/typescript-config/react-library.json",
   "compilerOptions": {
     "baseUrl": ".",
     "plugins": [

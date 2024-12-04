@@ -4,10 +4,6 @@
   "private": true,
   "author": "LioRael",
   "type": "module",
-  "exports": {
-    ".": "./src/index.ts",
-    "./router/*": "./src/router/*.ts"
-  },
   "scripts": {
     "lint": "eslint . --max-warnings 0"
   },
@@ -18,8 +14,8 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@nouz/eslint": "workspace:*",
-    "@nouz/tsconfig": "workspace:*",
+    "@nouz/eslint-config": "workspace:*",
+    "@nouz/typescript-config": "workspace:*",
     "@total-typescript/ts-reset": "catalog:",
     "next": "catalog:"
   }

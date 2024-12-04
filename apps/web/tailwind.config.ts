@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss'
 
-import preset from '@nouz/tailwind'
+import { config as preset } from '@nouz/tailwind-config/config'
 
 const config = {
   content: preset.content,

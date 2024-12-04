@@ -1,4 +1,4 @@
-import next from '@nouz/eslint/next.js'
+import next from '@nouz/eslint-config/next.js'
 
 export default [
   {

@@ -1,13 +1,10 @@
 {
-  "name": "@nouz/tailwind",
+  "name": "@nouz/tailwind-config",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
   "author": "LioRael",
   "type": "module",
-  "exports": {
-    ".": "./src/preset.ts"
-  },
   "scripts": {
     "lint": "eslint . --max-warnings 0"
   },
@@ -20,7 +17,7 @@
     "tailwindcss-animate": "catalog:"
   },
   "devDependencies": {
-    "@nouz/eslint": "workspace:*",
-    "@nouz/tsconfig": "workspace:*"
+    "@nouz/eslint-config": "workspace:*",
+    "@nouz/typescript-config": "workspace:*"
   }
 }

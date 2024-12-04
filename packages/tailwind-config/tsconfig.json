@@ -1,0 +1,3 @@
+{
+  "extends": "@nouz/typescript-config/react-library.json"
+}

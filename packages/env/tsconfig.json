@@ -1,4 +1,4 @@
 {
-  "extends": "@nouz/tsconfig/base.json",
+  "extends": "@nouz/typescript-config/base.json",
   "exclude": ["node_modules"]
 }

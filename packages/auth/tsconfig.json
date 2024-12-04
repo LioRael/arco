@@ -1,5 +1,5 @@
 {
-  "extends": "@nouz/tsconfig/base.json",
+  "extends": "@nouz/typescript-config/base.json",
   "compilerOptions": {
     "declaration": false,
     "declarationMap": false
