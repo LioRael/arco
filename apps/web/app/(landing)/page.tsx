@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 import { listSponsors } from '@nouz/api/router/sponsors'
 import { auth } from '@nouz/auth'
-import { Button } from '@nouz/ui/button'
-import { RainbowButton } from '@nouz/ui/rainbow-button'
-import { Skeleton } from '@nouz/ui/skeleton'
+import { Button } from '@nouz/design-system/components/ui/button'
+import { RainbowButton } from '@nouz/design-system/components/ui/rainbow-button'
+import { Skeleton } from '@nouz/design-system/components/ui/skeleton'
 
 export default async function HomePage() {
   const sponsors = await listSponsors(undefined)

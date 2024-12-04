@@ -11,13 +11,13 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from '@nouz/ui/dropdown-menu'
+} from '@nouz/design-system/components/ui/dropdown-menu'
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from '@nouz/ui/sidebar'
+} from '@nouz/design-system/components/ui/sidebar'
 
 export function TeamSwitcher({
   teams,

@@ -9,7 +9,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@nouz/ui/card'
+} from '@nouz/design-system/components/ui/card'
 
 import { NouzAuthCard } from '@/components/nouz-auth-card'
 

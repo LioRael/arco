@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { cn } from '@nouz/ui/cn'
 import {
   NavigationMenuLink,
   NavigationMenuRoot,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
   NavigationMenuViewport,
-} from '@nouz/ui/navigation-menu'
+} from '@nouz/design-system/components/ui/navigation-menu'
+import { cn } from '@nouz/design-system/utils/cn'
 
 export {
   NavigationMenu,
@@ -19,7 +19,7 @@ export {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
-} from '@nouz/ui/navigation-menu'
+} from '@nouz/design-system/components/ui/navigation-menu'
 
 const NouzNavigationMenuRoot = React.forwardRef<
   React.ComponentRef<typeof NavigationMenuRoot>,

@@ -6,7 +6,7 @@ import { useFormStatus } from 'react-dom'
 import { useForm, useFormContext } from 'react-hook-form'
 import { z } from 'zod'
 
-import { Button } from '@nouz/ui/button'
+import { Button } from '@nouz/design-system/components/ui/button'
 import {
   Form,
   FormControl,
@@ -14,9 +14,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@nouz/ui/form'
-import { Input } from '@nouz/ui/input'
-import { toast } from '@nouz/ui/sonner'
+} from '@nouz/design-system/components/ui/form'
+import { Input } from '@nouz/design-system/components/ui/input'
+import { toast } from '@nouz/design-system/components/ui/sonner'
 
 import { signIn } from '@/lib/auth/client'
 

@@ -9,7 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@nouz/ui/dropdown-menu'
+} from '@nouz/design-system/components/ui/dropdown-menu'
 import {
   SidebarGroup,
   SidebarGroupLabel,
@@ -18,7 +18,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from '@nouz/ui/sidebar'
+} from '@nouz/design-system/components/ui/sidebar'
 
 export function NouzNavProjects({
   projects,

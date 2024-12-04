@@ -3,7 +3,7 @@
 import type React from 'react'
 import { motion } from 'motion/react'
 
-import { cn } from '@nouz/ui/cn'
+import { cn } from '@nouz/design-system/utils/cn'
 
 interface NouzAuthCardProps
   extends React.ComponentPropsWithoutRef<typeof motion.div> {

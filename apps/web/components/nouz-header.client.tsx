@@ -3,7 +3,7 @@
 import type React from 'react'
 import { motion } from 'motion/react'
 
-import { cn } from '@nouz/ui/cn'
+import { cn } from '@nouz/design-system/utils/cn'
 
 import { useIsTop } from '@/hooks/use-is-top'
 import { useScrollDir } from '@/hooks/use-scroll-dir'

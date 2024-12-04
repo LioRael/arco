@@ -21,7 +21,7 @@ import {
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from '@nouz/ui/sidebar'
+} from '@nouz/design-system/components/ui/sidebar'
 
 import { NouzNavMain } from '@/components/nouz-nav-main'
 import { NouzNavProjects } from '@/components/nouz-nav-projects'

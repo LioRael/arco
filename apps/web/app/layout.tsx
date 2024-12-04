@@ -4,7 +4,7 @@ import localFont from 'next/font/local'
 
 import './globals.css'
 
-import { Toaster } from '@nouz/ui/sonner'
+import { Toaster } from '@nouz/design-system/components/ui/sonner'
 
 import { ORPCProvider } from '@/lib/orpc/react'
 

@@ -1,7 +1,11 @@
 'use client'
 
 import type { Session } from '@nouz/auth'
-import { SidebarMenu, SidebarMenuItem, useSidebar } from '@nouz/ui/sidebar'
+import {
+  SidebarMenu,
+  SidebarMenuItem,
+  useSidebar,
+} from '@nouz/design-system/components/ui/sidebar'
 
 import {
   NouzAccountDropdown,

@@ -25,15 +25,15 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from '@nouz/ui/breadcrumb'
+} from '@nouz/design-system/components/ui/breadcrumb'
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogTitle,
   DialogTrigger,
-} from '@nouz/ui/dialog'
-import { DropdownMenuItem } from '@nouz/ui/dropdown-menu'
+} from '@nouz/design-system/components/ui/dialog'
+import { DropdownMenuItem } from '@nouz/design-system/components/ui/dropdown-menu'
 import {
   Sidebar,
   SidebarContent,
@@ -43,7 +43,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-} from '@nouz/ui/sidebar'
+} from '@nouz/design-system/components/ui/sidebar'
 
 const data = {
   nav: [

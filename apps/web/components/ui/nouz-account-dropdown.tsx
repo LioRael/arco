@@ -2,7 +2,11 @@ import { CaretSortIcon, ComponentPlaceholderIcon } from '@radix-ui/react-icons'
 import { Bell, LogOut, Sparkles, UserIcon } from 'lucide-react'
 
 import type { Session } from '@nouz/auth'
-import { Avatar, AvatarFallback, AvatarImage } from '@nouz/ui/avatar'
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from '@nouz/design-system/components/ui/avatar'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,8 +15,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@nouz/ui/dropdown-menu'
-import { SidebarMenuButton } from '@nouz/ui/sidebar'
+} from '@nouz/design-system/components/ui/dropdown-menu'
+import { SidebarMenuButton } from '@nouz/design-system/components/ui/sidebar'
 
 import { AccountItem } from '../nouz-account-dialog'
 import { SignOutButton } from '../sign-out-button'

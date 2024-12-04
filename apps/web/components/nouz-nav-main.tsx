@@ -7,7 +7,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from '@nouz/ui/collapsible'
+} from '@nouz/design-system/components/ui/collapsible'
 import {
   SidebarGroup,
   SidebarGroupLabel,
@@ -17,7 +17,7 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
   SidebarMenuSubItem,
-} from '@nouz/ui/sidebar'
+} from '@nouz/design-system/components/ui/sidebar'
 
 export function NouzNavMain({
   items,

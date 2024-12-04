@@ -5,9 +5,9 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from '@nouz/ui/breadcrumb'
-import { Separator } from '@nouz/ui/separator'
-import { SidebarTrigger } from '@nouz/ui/sidebar'
+} from '@nouz/design-system/components/ui/breadcrumb'
+import { Separator } from '@nouz/design-system/components/ui/separator'
+import { SidebarTrigger } from '@nouz/design-system/components/ui/sidebar'
 
 export default function DashboardPage() {
   return (

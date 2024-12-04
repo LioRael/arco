@@ -4,8 +4,8 @@ import Link from 'next/link'
 import { AppleIcon, BoxIcon, TerminalIcon } from 'lucide-react'
 
 import { auth, type Session } from '@nouz/auth'
-import { Button } from '@nouz/ui/button'
-import ShimmerButton from '@nouz/ui/shimmer-button'
+import { Button } from '@nouz/design-system/components/ui/button'
+import ShimmerButton from '@nouz/design-system/components/ui/shimmer-button'
 
 import {
   NavigationMenuContent,

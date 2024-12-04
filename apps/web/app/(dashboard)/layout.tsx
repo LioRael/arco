@@ -2,7 +2,10 @@ import type React from 'react'
 import { headers } from 'next/headers'
 
 import { auth } from '@nouz/auth'
-import { SidebarInset, SidebarProvider } from '@nouz/ui/sidebar'
+import {
+  SidebarInset,
+  SidebarProvider,
+} from '@nouz/design-system/components/ui/sidebar'
 
 import { NouzSidebar } from '@/components/nouz-sidebar'
 
